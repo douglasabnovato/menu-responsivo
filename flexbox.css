@@ -14,7 +14,12 @@
 }
 
 .box-2{
-    flex: 2;
+    flex-grow: 2;
+}
+
+.box-3{
+    flex-grow: 2;
+    order:3;    
 }
 
 .box-1{ background-color: #C12543; }
