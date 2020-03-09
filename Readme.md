@@ -1,5 +1,7 @@
 Prática em HTML CSS JAVASCRIPT
 - Cards
-- Menu Responsivo em FlexBox.
+- Flexbox
+- Menu Responsivo em FlexBox
+- CSS Grid Layout e Flexbox
 
 >douglasabnovato

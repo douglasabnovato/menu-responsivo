@@ -1,3 +1,4 @@
+/*Menu*/
 header{
     height: 40vh;
     background-color: black;
@@ -52,3 +53,37 @@ header nav ul a:hover {
         width: 100%;
     }
 }    
+/*FIM - menu*/
+/*Cards*/
+.container{
+    width: 98%;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 300px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 10px;                
+    text-align: center;
+    font-family: arial;
+    float:right;
+}
+
+.price{
+    color: grey;
+    font-size: 22px; 
+}
+
+.card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background: black;
+    text-align: center;
+    cursor: pointer;
+    width: 92%;
+    font-size: 18px;
+}
+/*FIM - Cards*/
