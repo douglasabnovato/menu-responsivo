@@ -94,5 +94,6 @@ img{
     .grid1 div.anuncio{
         grid-column: auto;
         grid-row: auto;
+        order: -1;
     }
 }
