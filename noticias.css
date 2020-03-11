@@ -24,6 +24,7 @@ img{
     display: block;
 }
 
+/* Barra Navegação */
 .header{
     background: #1d1e20;
     display: flex;
@@ -31,7 +32,20 @@ img{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+
 }
+
+.header a{
+    display: block;
+    padding: 10px;
+}
+
+.header a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Menu da Barra Navegação */
 
 .menu{
     display: flex;
@@ -44,6 +58,11 @@ img{
 .menu li a{
     display: block;
     padding: 10px;
+}
+
+.menu a:hover {
+    background: #ddd;
+    color: black;
 }
 
 /* css flexbox 1 */
