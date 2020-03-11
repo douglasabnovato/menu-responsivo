@@ -66,6 +66,7 @@ img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 780px;
+    padding: 10px;
     margin: 0 auto;
     grid-gap: 20px;
 }
@@ -97,3 +98,14 @@ img{
         order: -1;
     }
 }
+
+/* css grid 2 */
+
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}   
