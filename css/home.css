@@ -1,0 +1,107 @@
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+body{
+    margin-bottom: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1.home{
+    text-align: center;
+    margin-top: 150px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Barra Navegação */
+.header{
+    background: #1d1e20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+}
+
+.header a{
+    display: block;
+    padding: 10px;
+}
+
+.header a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/* Menu da Barra Navegação */
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 30px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+
+.menu a:hover {
+    background: #ddd;
+    color: black;
+}
+
+/*Cards*/
+.container{
+    width: 98%;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 300px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 10px;                
+    text-align: center;
+    font-family: arial;
+    float:right;
+}
+
+.price{
+    color: grey;
+    font-size: 22px; 
+}
+
+.card button{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background: black;
+    text-align: center;
+    cursor: pointer;
+    width: 92%;
+    font-size: 18px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+/*FIM - Cards*/
