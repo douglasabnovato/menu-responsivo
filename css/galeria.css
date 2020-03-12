@@ -102,3 +102,42 @@ img{
     grid-row: 2;
     align-self: end;
 }
+
+/*Search bar*/
+
+* {
+    box-sizing: border-box;
+}
+
+form.searchbar-item input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.searchbar-item button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: white;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.searchbar-item button:hover {
+    background: grey;
+}
+
+form.searchbar-item::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* FIM Search bar*/

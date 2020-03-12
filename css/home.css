@@ -1,46 +1,46 @@
-body, ul, li, p{
+body, ul, li, p {
     margin: 0px;
     padding: 0px;
     list-style: none;
     font-size: 1.2rem;
     font-family: Arial;
 }
-body{
+
+body {
     margin-bottom: 100px;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-h1.home{
+h1.home {
     text-align: center;
     margin-top: 100px;
 }
 
-img{
+img {
     max-width: 100%;
     display: block;
 }
 
 /* Barra Navegação */
-.header{
+
+.header {
     background: #1d1e20;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
-
 }
 
-.header a{
+.header a {
     display: block;
     padding: 10px;
 }
@@ -52,15 +52,15 @@ img{
 
 /* Menu da Barra Navegação */
 
-.menu{
+.menu {
     display: flex;
 }
 
-.menu li{
+.menu li {
     margin-left: 30px;
 }
 
-.menu li a{
+.menu li a {
     display: block;
     padding: 10px;
 }
@@ -71,27 +71,28 @@ img{
 }
 
 /*Cards*/
-.container{
+
+.container {
     width: 98%;
 }
 
-.card{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
     margin-top: 10px;
-    margin-left: 10px;                
+    margin-left: 10px;
     text-align: center;
     font-family: arial;
-    float:right;
+    float: right;
 }
 
-.price{
+.price {
     color: grey;
-    font-size: 22px; 
+    font-size: 22px;
 }
 
-.card button{
+.card button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -104,4 +105,44 @@ img{
     margin-bottom: 8px;
     margin-top: 8px;
 }
+
 /*FIM - Cards*/
+
+/*Search bar*/
+
+* {
+    box-sizing: border-box;
+}
+
+form.searchbar-item input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.searchbar-item button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: white;
+    color: black;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.searchbar-item button:hover {
+    background: grey;
+}
+
+form.searchbar-item::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* FIM Search bar*/
