@@ -66,6 +66,12 @@ img {
 }
 
 /* Login e Register*/
+
+.tab input{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 .home-item {
     position: fixed;
     top: 80px;
@@ -85,109 +91,153 @@ button#signup {
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
-  }
-  
+}
+
 button#signup:hover {
-    opacity:1;
-}
-
-/* Full-width input fields */
-input.signup-input[type=text], input.signup-input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  display: inline-block;
-  border: none;
-  background: #f1f1f1;
-}
-
-/* Add a background color when the inputs get focus */
-input.signup-input[type=text]:focus, input.signup-input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Extra styles for the cancel button */
-.cancelbtn {
-  padding: 14px 20px;
-  background-color: #f44336;
-  cursor: pointer;
-}
-
-/* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
-  float: left;
-  width: 50%;
-}
-
-.signupbtn {
-    padding: 14px 20px;
-    background-color: #4CAF50;
-    cursor: pointer;
-  }
-
-
-/* Add padding to container elements */
-.signup-container {
-  padding: 16px;
+    opacity: 1;
 }
 
 /* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: #474e5d;
-  padding-top: 50px;
-}
 
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
 }
 
 /* Style the horizontal ruler */
+
 hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
 }
- 
+
 /* The Close Button (x) */
+
 .close {
-  position: absolute;
-  right: 35px;
-  top: 15px;
-  font-size: 40px;
-  font-weight: bold;
-  color: #f1f1f1;
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
 }
 
-.close:hover,
-.close:focus {
-  color: #f44336;
-  cursor: pointer;
+.close:hover, .close:focus {
+    color: #f44336;
+    cursor: pointer;
 }
 
-/* Clear floats */
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+/* Formulario de sign up*/
+
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    font-family: Raleway;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
 }
 
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-     width: 100%;
+input{
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+
+input.invalid {
+    background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+
+.tab {
+    display: none;
+}
+
+.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+
+button{
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+#prevBtn {
+    background-color: #bbbbbb;
+}
+
+/* Make circles that indicate the steps of the form: */
+
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+
+.step.finish {
+    background-color: #4CAF50;
+}
+
+.icon {
+    align-items: center;
+    padding: 5px;
+    background: #4CAF50;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
   }
+  
+.input-field:focus {
+    border: 2px solid #4CAF50;
 }
 
 /* FIM Login e Register*/
@@ -203,14 +253,14 @@ h1#home {
     margin-top: 180px;
 }
 
-.card{
+.card {
     display: flex;
     flex-wrap: wrap;
     max-width: 800px;
     margin: 0 auto;
 }
 
-.card > div{
+.card>div {
     flex: 1 1 200px;
     margin: 10px;
 }
@@ -287,46 +337,48 @@ form.searchbar-item::after {
 /* FIM Search bar*/
 
 /* Newsletter*/
+
 form.newsletter {
-  font-family: Arial;
-  padding-top: 30px;
-  padding-bottom: 30px;
+    font-family: Arial;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .newsletter-container {
-  padding: 10px;
-  background-color: #f1f1f1;
+    padding: 10px;
+    background-color: #f1f1f1;
 }
 
-.newsletter{
+.newsletter {
     max-width: 800px;
     margin: 0 auto;
 }
 
-.newsletter > div{
+.newsletter>div {
     margin: 10px;
 }
 
 input.newsletter-input[type=text], input.newsletter-input[type=submit] {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 input.newsletter-input[type=checkbox] {
-  margin-top: 16px;
+    margin-top: 16px;
 }
 
 input.newsletter-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
 }
 
 input.newsletter-input[type=submit]:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
+
 /* FIM Newsletter*/
