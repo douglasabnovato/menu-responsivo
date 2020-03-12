@@ -108,6 +108,15 @@ input#enviar:hover {
   padding: 20px;
 }
 
+.contato{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contato > div{
+    margin: 10px;
+}
+
 /*Search bar*/
 form.searchbar-item input[type=text] {
     padding: 10px;

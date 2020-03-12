@@ -114,6 +114,15 @@ img {
     width: 80%;
 }
 
+.content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content > div{
+    margin: 10px;
+}
+
 /*Search bar*/
 
 form.searchbar-item input[type=text] {

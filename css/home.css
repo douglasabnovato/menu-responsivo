@@ -15,11 +15,6 @@ a {
     color: white;
 }
 
-h1.home {
-    text-align: center;
-    margin-top: 100px;
-}
-
 img {
     max-width: 100%;
     display: block;
@@ -70,13 +65,157 @@ img {
     color: black;
 }
 
-/*Cards*/
-
-.container {
-    width: 98%;
+/* Login e Register*/
+.home-item {
+    position: fixed;
+    top: 80px;
+    z-index: 1;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.card {
+button#signup {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  
+button#signup:hover {
+    opacity:1;
+}
+
+/* Full-width input fields */
+input.signup-input[type=text], input.signup-input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input.signup-input[type=text]:focus, input.signup-input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+  cursor: pointer;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+.signupbtn {
+    padding: 14px 20px;
+    background-color: #4CAF50;
+    cursor: pointer;
+  }
+
+
+/* Add padding to container elements */
+.signup-container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+
+/* FIM Login e Register*/
+
+/*Cards*/
+
+.home {
+    width: 75%;
+}
+
+h1#home {
+    text-align: center;
+    margin-top: 180px;
+}
+
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.card-item {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
     margin: auto;
@@ -92,7 +231,7 @@ img {
     font-size: 22px;
 }
 
-.card button {
+.card-item button {
     border: none;
     outline: 0;
     padding: 12px;
@@ -146,3 +285,48 @@ form.searchbar-item::after {
 }
 
 /* FIM Search bar*/
+
+/* Newsletter*/
+form.newsletter {
+  font-family: Arial;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.newsletter-container {
+  padding: 10px;
+  background-color: #f1f1f1;
+}
+
+.newsletter{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.newsletter > div{
+    margin: 10px;
+}
+
+input.newsletter-input[type=text], input.newsletter-input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input.newsletter-input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input.newsletter-input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+input.newsletter-input[type=submit]:hover {
+  opacity: 0.8;
+}
+/* FIM Newsletter*/
