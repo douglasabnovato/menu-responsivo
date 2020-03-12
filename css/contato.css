@@ -1,46 +1,51 @@
-body, ul, li, p{
+* {
+    box-sizing: border-box;
+}
+
+body, ul, li, p {
     margin: 0px;
     padding: 0px;
     list-style: none;
     font-size: 1.2rem;
     font-family: Arial;
 }
-body{
+
+body {
     margin-bottom: 100px;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-h1{
+h1 {
     text-align: center;
     margin-top: 100px;
 }
 
-img{
+img {
     max-width: 100%;
     display: block;
 }
 
 /* Barra Navegação */
-.header{
+
+.header {
     background: #1d1e20;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-
+    
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
-
 }
 
-.header a{
+.header a {
     display: block;
     padding: 10px;
 }
@@ -52,15 +57,15 @@ img{
 
 /* Menu da Barra Navegação */
 
-.menu{
+.menu {
     display: flex;
 }
 
-.menu li{
+.menu li {
     margin-left: 30px;
 }
 
-.menu li a{
+.menu li a {
     display: block;
     padding: 10px;
 }
@@ -71,10 +76,9 @@ img{
 }
 
 /*container form*/
-body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
 
-input[type=text], select, textarea {
+
+input.formText , select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -85,7 +89,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+input#enviar {
   background-color: #4CAF50;
   color: white;
   padding: 12px 20px;
@@ -94,21 +98,17 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+input#enviar:hover {
   background-color: #45a049;
 }
 
-.container {
+.contato-item {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
 }
+
 /*Search bar*/
-
-* {
-    box-sizing: border-box;
-}
-
 form.searchbar-item input[type=text] {
     padding: 10px;
     font-size: 17px;

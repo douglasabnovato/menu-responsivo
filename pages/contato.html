@@ -4,6 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" type="text/css" href="../css/contato.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Contato</title>
     </head>
     <body>
@@ -18,7 +19,7 @@
                     <li><a href="galeria.html">Galeria</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="#contato" style="margin-right: 30px;">Contato</a></li>
-                </ul>                
+                </ul>                  
             </nav>
             <div class="searchbar">
                 <form class="searchbar-item" action="/action_page.php" style="margin:auto;max-width:300px">
@@ -30,25 +31,21 @@
         <div id="contato">
             <h1>contato</h1>
             <section class="contato">
-                <div class="container">
+                <div class="contato-item">
                     <form action="/action_page.php">
                         <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    
+                            <input class="formText" type="text" id="fname" name="firstname" placeholder="Your name..">                    
                         <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    
+                            <input class="formText" type="text" id="lname" name="lastname" placeholder="Your last name..">                    
                         <label for="country">Country</label>
-                        <select id="country" name="country">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                        </select>
-                    
+                            <select id="country" name="country">
+                                <option value="australia">Australia</option>
+                                <option value="canada">Canada</option>
+                                <option value="usa">USA</option>
+                            </select>                    
                         <label for="subject">Subject</label>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                    
-                        <input type="submit" value="Submit">
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <input id="enviar" type="submit" value="Enviar">
                     </form>
                 </div>
             </section>
