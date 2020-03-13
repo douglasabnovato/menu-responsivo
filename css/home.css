@@ -339,24 +339,19 @@ form.searchbar-item::after {
 
 /* Newsletter*/
 
-form.newsletter {
+section.newsletter {
+    max-width: 780px;
+    margin: 0 auto;
+}form.newsletter {
+    border: 3px solid #f1f1f1;
     font-family: Arial;
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
-.newsletter-container {
+div.newsletter-container {
     padding: 10px;
     background-color: #f1f1f1;
-}
-
-.newsletter {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.newsletter>div {
-    margin: 10px;
 }
 
 input.newsletter-input[type=text], input.newsletter-input[type=submit] {
@@ -369,17 +364,17 @@ input.newsletter-input[type=text], input.newsletter-input[type=submit] {
 }
 
 input.newsletter-input[type=checkbox] {
-    margin-top: 16px;
+    margin-top: 10px;
 }
 
 input.newsletter-input[type=submit] {
     background-color: #4CAF50;
     color: white;
     border: none;
+    cursor: pointer;
 }
 
 input.newsletter-input[type=submit]:hover {
     opacity: 0.8;
 }
-
 /* FIM Newsletter*/
