@@ -1,7 +1,22 @@
 Prática em HTML CSS JAVASCRIPT
-- Cards
-- Flexbox
-- Menu Responsivo em FlexBox
-- CSS Grid Layout e Flexbox
+
+Funcionalidades
+- search
+- newsletter
+- login / validation
+- register / signup
+- flexbox
+- grid<br/>
+
+Telas
+- home
+- list
+- globo.com
+- youtube 
+- galeria
+- sobre
+- contato
+
+
 
 >douglasabnovato
