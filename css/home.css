@@ -168,18 +168,6 @@ input.invalid {
 
 /* Hide all steps by default: */
 
-.tab {
-    display: none;
-}
-
-.input-container {
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    width: 100%;
-    margin-bottom: 10px;
-}
-  
-
 button{
     background-color: #4CAF50;
     color: #ffffff;
@@ -221,24 +209,36 @@ button:hover {
     background-color: #4CAF50;
 }
 
-.icon {
-    align-items: center;
+div.tab {
+    display: none;
+}
+
+div.input-container {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+div.input-container i.icon {
     padding: 5px;
     background: #4CAF50;
     color: white;
     min-width: 50px;
+    min-height: 40px;
     text-align: center;
 }
 
-.input-field {
+div.input-field {
     width: 100%;
     padding: 10px;
     outline: none;
-  }
-  
-.input-field:focus {
+}
+
+div.input-field:focus {
     border: 2px solid #4CAF50;
 }
+
 
 /* FIM Login e Register*/
 
