@@ -15,7 +15,7 @@ Telas
 - youtube 
 - galeria
 - sobre
-- contato
+- contato<br/>
 
 Desafios
 - banco de dados
