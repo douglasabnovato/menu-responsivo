@@ -1,4 +1,5 @@
 /* página */
+
 body, ul, li, p {
     margin: 0px;
     padding: 0px;
@@ -68,7 +69,7 @@ img {
 
 /* Login e Register*/
 
-.tab input{
+.tab input {
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -83,7 +84,7 @@ img {
     box-sizing: border-box;
 }
 
-button#signup {
+button.button-access{
     background-color: #4CAF50;
     color: white;
     padding: 14px 20px;
@@ -94,13 +95,13 @@ button#signup {
     opacity: 0.9;
 }
 
-button#signup:hover {
+button.button-access:hover {
     opacity: 1;
 }
 
 /* The Modal (background) */
 
-.modal {
+.modal-signup {
     display: none;
     /* Hidden by default */
     position: fixed;
@@ -153,7 +154,7 @@ hr {
     min-width: 300px;
 }
 
-input{
+input {
     padding: 10px;
     width: 100%;
     font-size: 17px;
@@ -169,7 +170,7 @@ input.invalid {
 
 /* Hide all steps by default: */
 
-button{
+button {
     background-color: #4CAF50;
     color: #ffffff;
     border: none;
@@ -215,7 +216,8 @@ div.tab {
 }
 
 div.input-container {
-    display: -ms-flexbox; /* IE10 */
+    display: -ms-flexbox;
+    /* IE10 */
     display: flex;
     width: 100%;
     margin-bottom: 15px;
@@ -239,7 +241,6 @@ div.input-field {
 div.input-field:focus {
     border: 2px solid #4CAF50;
 }
-
 
 /* FIM Login e Register*/
 
@@ -342,7 +343,9 @@ form.searchbar-item::after {
 section.newsletter {
     max-width: 780px;
     margin: 0 auto;
-}form.newsletter {
+}
+
+form.newsletter {
     border: 3px solid #f1f1f1;
     font-family: Arial;
     padding-top: 30px;
@@ -377,4 +380,9 @@ input.newsletter-input[type=submit] {
 input.newsletter-input[type=submit]:hover {
     opacity: 0.8;
 }
+
 /* FIM Newsletter*/
+
+/* Login */
+
+/* FIM Login */

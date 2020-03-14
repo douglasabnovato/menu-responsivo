@@ -1,272 +1,282 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="css/home.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <!-- Add icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <title>Home</title>
-    </head>
-    <body>
-        <!-- Menu -->    
-        <!-- Barra de Navegação -->
-        <header class="header">        
-            <a href="#">LOGO</a>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="pages/lista.html">Lista</a></li>
-                    <li><a href="pages/globocom.html">Globo.com</a></li>
-                    <li><a href="pages/youtube.html">Youtube</a></li>
-                    <li><a href="pages/galeria.html">Galeria</a></li>
-                    <li><a href="pages/sobre.html">Sobre</a></li>
-                    <li><a href="pages/contato.html" style="margin-right: 30px;">Contato</a></li>
-                </ul>
-            </nav>        
-            <!-- Barra de pesquisa -->
-            <div class="searchbar">
-                <form class="searchbar-item" action="/action_page.php" style="margin:auto;max-width:300px;">
-                    <input type="text" placeholder="Search.." name="search2">
-                    <button type="submit"><i class="fa fa-search"></i></button>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- Menu -->
+    <!-- Barra de Navegação -->
+    <header class="header">
+        <a href="#">LOGO</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="pages/lista.html">Lista</a></li>
+                <li><a href="pages/globocom.html">Globo.com</a></li>
+                <li><a href="pages/youtube.html">Youtube</a></li>
+                <li><a href="pages/galeria.html">Galeria</a></li>
+                <li><a href="pages/sobre.html">Sobre</a></li>
+                <li><a href="pages/contato.html" style="margin-right: 30px;">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- Barra de pesquisa -->
+        <div class="searchbar">
+            <form class="searchbar-item" action="/action_page.php" style="margin:auto;max-width:300px;">
+                <input type="text" placeholder="Search.." name="search2">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <!-- FIM Barra de pesquisa -->
+    </header>
+    <!-- FIM Barra de Navegação -->
+    <div>
+        <!-- Barra de Acesso -->
+        <div class="home-item">
+            <!-- Sign Up -->
+            <button id="signup" class="button-access" onclick="document.getElementById('id01').style.display='block'"
+                style="width:auto;">
+                Sign Up
+            </button>
+            <div id="id01" class="modal-signup">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">
+                    &times;
+                </span>
+                <form id="regForm" action="/action_page.php">
+                    <h1>Sign Up</h1>
+                    <!-- One "tab" for each step in the form: -->
+                    <div class="tab">Name:
+                        <div class="input-container">
+                            <i class="fa fa-user icon"></i>
+                            <input class="input-field" type="text" placeholder="First name..."
+                                oninput="this.className = ''" name="fname">
+                        </div>
+                        <div class="input-container">
+                            <i class="fa fa-user icon"></i>
+                            <input class="input-field" type="text" oninput="this.className = ''"
+                                placeholder="Last name..." name="lname">
+                        </div>
+                    </div>
+                    <div class="tab">Contact Info:
+                        <div class="input-container">
+                            <i class="fa fa-envelope icon"></i>
+                            <input class="input-field" type="e-mail" placeholder="E-mail..."
+                                oninput="this.className = ''" name="email">
+                        </div>
+                        <div class="input-container">
+                            <i class="fa fa-phone icon"></i>
+                            <input class="input-field" type="number" placeholder="Phone..."
+                                oninput="this.className = ''" name="phone">
+                        </div>
+                    </div>
+                    <div class="tab">Birthday:
+                        <div class="input-container">
+                            <i class="fa fa-anchor icon"></i>
+                            <input class="input-field" type="date-day" placeholder="dd" oninput="this.className = ''"
+                                name="dd">
+                        </div>
+                        <div class="input-container">
+                            <i class="fa fa-anchor icon"></i>
+                            <input class="input-field" type="date-month" placeholder="mm" oninput="this.className = ''"
+                                name="nn">
+                        </div>
+                        <div class="input-container">
+                            <i class="fa fa-anchor icon"></i>
+                            <input class="input-field" type="date-year" placeholder="yyyy" oninput="this.className = ''"
+                                name="yyyy">
+                        </div>
+                    </div>
+                    <div class="tab">Login Info:
+                        <div class="input-container">
+                            <i class="fa fa-user icon"></i>
+                            <input class="input-field" type="text" placeholder="Username..."
+                                oninput="this.className = ''" name="uname">
+                        </div>
+                        <div class="input-container">
+                            <i class="fa fa-key icon"></i>
+                            <input class="input-field" type="password" placeholder="Password..."
+                                oninput="this.className = ''" name="pword" type="password">
+                        </div>
+                    </div>
+                    <div style="overflow:auto;">
+                        <div style="float:right;">
+                            <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                            <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                        </div>
+                    </div>
+                    <!-- Circles which indicates the steps of the form: -->
+                    <div style="text-align:center;margin-top:40px;">
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                        <span class="step"></span>
+                    </div>
                 </form>
             </div>
-            <!-- FIM Barra de pesquisa -->
-        </header>
-        <!-- FIM Barra de Navegação -->
-        <div>
-            <!-- Barra de Acesso -->
-            <div class="home-item">
-                <!-- Sign Up -->
-                <button 
-                    id="signup" 
-                    onclick="document.getElementById('id01').style.display='block'" 
-                    style="width:auto;">
-                    Sign Up
-                </button>
-                <div id="id01" class="modal">
-                    <span 
-                        onclick="document.getElementById('id01').style.display='none'" 
-                        class="close"
-                        title="Close Modal">
-                        &times;
-                    </span>
-                    <form id="regForm" action="/action_page.php">
-                        <h1>Sign Up</h1>
-                        <!-- One "tab" for each step in the form: -->
-                        <div class="tab">Name:
-                            <div class="input-container">
-                                <i class="fa fa-user icon"></i>
-                                <input class="input-field" type="text" placeholder="First name..." oninput="this.className = ''" name="fname">
-                            </div>
-                            <div class="input-container">
-                                <i class="fa fa-user icon"></i>
-                                <input class="input-field" type="text" oninput="this.className = ''" placeholder="Last name..." name="lname">
-                            </div>
-                        </div>
-                        <div class="tab">Contact Info:
-                            <div class="input-container">
-                                <i class="fa fa-envelope icon"></i>
-                                <input class="input-field" type="e-mail" placeholder="E-mail..." oninput="this.className = ''" name="email">
-                            </div>
-                            <div class="input-container">
-                                <i class="fa fa-phone icon"></i>
-                                <input class="input-field" type="number" placeholder="Phone..." oninput="this.className = ''" name="phone">
-                            </div>
-                        </div>
-                        <div class="tab">Birthday:
-                            <div class="input-container">
-                                <i class="fa fa-anchor icon"></i>
-                                <input class="input-field" type="date-day" placeholder="dd" oninput="this.className = ''" name="dd">
-                            </div>
-                            <div class="input-container">
-                                <i class="fa fa-anchor icon"></i>
-                                <input class="input-field" type="date-month" placeholder="mm" oninput="this.className = ''" name="nn">
-                            </div>
-                            <div class="input-container">
-                                <i class="fa fa-anchor icon"></i>
-                                <input class="input-field" type="date-year" placeholder="yyyy" oninput="this.className = ''" name="yyyy">
-                            </div>
-                        </div>
-                        <div class="tab">Login Info:
-                            <div class="input-container">
-                                <i class="fa fa-user icon"></i>
-                                <input class="input-field" type="text" placeholder="Username..." oninput="this.className = ''" name="uname">
-                            </div>
-                            <div class="input-container">
-                                <i class="fa fa-key icon"></i>
-                                <input class="input-field" type="password" placeholder="Password..." oninput="this.className = ''" name="pword" type="password">
-                            </div>
-                        </div>
-                        <div style="overflow:auto;">
-                            <div style="float:right;">
-                                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-                            </div>
-                        </div>
-                        <!-- Circles which indicates the steps of the form: -->
-                        <div style="text-align:center;margin-top:40px;">
-                            <span class="step"></span>
-                            <span class="step"></span>
-                            <span class="step"></span>
-                            <span class="step"></span>
-                        </div>
-                    </form>
-                </div>
-                <!-- FIM Sign Up -->            
-            </div>
-            <!-- FIM Barra de Acesso -->
-            <!-- FIM Menu -->
-            <h1 id="home">home</h1>
-            <section class="card">
-                <div class="card-item">
-                    <h1>Uma História</h1>
-                    <p class="price">$199,81</p>
-                    <p>
-                        Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
-                        jeansum.
-                    </p>
-                    <p><button>Ler História</button></p>
-                </div>
-                <div class="card-item">
-                    <h1>Uma História</h1>
-                    <p class="price">$199,82</p>
-                    <p>
-                        Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
-                        jeansum.
-                    </p>
-                    <p><button>Ler História</button></p>
-                </div>
-                <div class="card-item">
-                    <h1>Uma História</h1>
-                    <p class="price">$199,83</p>
-                    <p>
-                        Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
-                        jeansum.
-                    </p>
-                    <p><button>Ler História</button></p>
-                </div>
-                <div class="card-item">
-                    <h1>Uma História</h1>
-                    <p class="price">$199,84</p>
-                    <p>
-                        Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
-                        jeansum.
-                    </p>
-                    <p><button>Ler História</button></p>
-                </div>
-                <div class="card-item">
-                    <h1>Uma História</h1>
-                    <p class="price">$199,85</p>
-                    <p>
-                        Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
-                        jeansum.
-                    </p>
-                    <p><button>Ler História</button></p>
-                </div>
-                <div class="card-item">
-                    <h1>Uma História</h1>
-                    <p class="price">$199,86</p>
-                    <p>
-                        Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
-                        jeansum.
-                    </p>
-                    <p><button>Ler História</button></p>
-                </div>
-                <div class="card-item">
-                    <h1>Uma História</h1>
-                    <p class="price">$199,87</p>
-                    <p>
-                        Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
-                        jeansum.
-                    </p>
-                    <p><button>Ler História</button></p>
-                </div>
-                <div class="card-item">
-                    <h1>Uma História</h1>
-                    <p class="price">$199,88</p>
-                    <p>
-                        Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
-                        jeansum.
-                    </p>
-                    <p><button>Ler História</button></p>
-                </div>
-                <div class="card-item">
-                    <h1>Uma História</h1>
-                    <p class="price">$199,89</p>
-                    <p>
-                        Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
-                        jeansum.
-                    </p>
-                    <p><button>Ler História</button></p>
-                </div>
-                <div class="card-item">
-                    <h1>Uma História</h1>
-                    <p class="price">$199,90</p>
-                    <p>
-                        Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
-                        jeansum.
-                    </p>
-                    <p><button>Ler História</button></p>
-                </div>
-                <div class="card-item">
-                    <h1>Uma História</h1>
-                    <p class="price">$199,91</p>
-                    <p>
-                        Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
-                        jeansum.
-                    </p>
-                    <p><button>Ler História</button></p>
-                </div>
-                <div class="card-item">
-                    <h1>Uma História</h1>
-                    <p class="price">$199,92</p>
-                    <p>
-                        Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
-                        jeansum.
-                    </p>
-                    <p><button>Ler História</button></p>
-                </div>
-            </section>
-            <section class="newsletter">
-                <form class="newsletter" action="/action_page.php">
-                    <div class="newsletter-container">
-                        <h2>Subscribe to our Newsletter</h2>
-                        <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about
-                            why you should subscribe to our newsletter blabla.</p>
-                    </div>
-                    <div class="newsletter-container" style="background-color:white">
-                        <input class="newsletter-input" type="text" placeholder="Name" name="name" required>
-                        <input class="newsletter-input" type="text" placeholder="Email address" name="mail" required>
-                        <div>
-                            <input class="newsletter-input" type="checkbox" checked="checked" name="subscribe"> 
-                            <label>Daily Newsletter</label>
-                        </div>                                            
-                    </div>
-                    <div class="newsletter-container">
-                        <input class="newsletter-input" type="submit" value="Subscribe">
-                    </div>
-                </form>       
-            </section>
+            <!-- FIM Sign Up -->
+            <!-- Login -->
+            <button id="signup" class="button-access" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                Login
+            </button>
+            <!-- FIM Login -->
         </div>
-    </body>
+        <!-- FIM Barra de Acesso -->
+        <!-- FIM Menu -->
+        <h1 id="home">home</h1>
+        <section class="card">
+            <div class="card-item">
+                <h1>Uma História</h1>
+                <p class="price">$199,81</p>
+                <p>
+                    Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.
+                </p>
+                <p><button>Ler História</button></p>
+            </div>
+            <div class="card-item">
+                <h1>Uma História</h1>
+                <p class="price">$199,82</p>
+                <p>
+                    Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.
+                </p>
+                <p><button>Ler História</button></p>
+            </div>
+            <div class="card-item">
+                <h1>Uma História</h1>
+                <p class="price">$199,83</p>
+                <p>
+                    Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.
+                </p>
+                <p><button>Ler História</button></p>
+            </div>
+            <div class="card-item">
+                <h1>Uma História</h1>
+                <p class="price">$199,84</p>
+                <p>
+                    Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.
+                </p>
+                <p><button>Ler História</button></p>
+            </div>
+            <div class="card-item">
+                <h1>Uma História</h1>
+                <p class="price">$199,85</p>
+                <p>
+                    Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.
+                </p>
+                <p><button>Ler História</button></p>
+            </div>
+            <div class="card-item">
+                <h1>Uma História</h1>
+                <p class="price">$199,86</p>
+                <p>
+                    Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.
+                </p>
+                <p><button>Ler História</button></p>
+            </div>
+            <div class="card-item">
+                <h1>Uma História</h1>
+                <p class="price">$199,87</p>
+                <p>
+                    Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.
+                </p>
+                <p><button>Ler História</button></p>
+            </div>
+            <div class="card-item">
+                <h1>Uma História</h1>
+                <p class="price">$199,88</p>
+                <p>
+                    Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.
+                </p>
+                <p><button>Ler História</button></p>
+            </div>
+            <div class="card-item">
+                <h1>Uma História</h1>
+                <p class="price">$199,89</p>
+                <p>
+                    Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.
+                </p>
+                <p><button>Ler História</button></p>
+            </div>
+            <div class="card-item">
+                <h1>Uma História</h1>
+                <p class="price">$199,90</p>
+                <p>
+                    Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.
+                </p>
+                <p><button>Ler História</button></p>
+            </div>
+            <div class="card-item">
+                <h1>Uma História</h1>
+                <p class="price">$199,91</p>
+                <p>
+                    Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.
+                </p>
+                <p><button>Ler História</button></p>
+            </div>
+            <div class="card-item">
+                <h1>Uma História</h1>
+                <p class="price">$199,92</p>
+                <p>
+                    Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem
+                    jeansum.
+                </p>
+                <p><button>Ler História</button></p>
+            </div>
+        </section>
+        <section class="newsletter">
+            <form class="newsletter" action="/action_page.php">
+                <div class="newsletter-container">
+                    <h2>Subscribe to our Newsletter</h2>
+                    <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about
+                        why you should subscribe to our newsletter blabla.</p>
+                </div>
+                <div class="newsletter-container" style="background-color:white">
+                    <input class="newsletter-input" type="text" placeholder="Name" name="name" required>
+                    <input class="newsletter-input" type="text" placeholder="Email address" name="mail" required>
+                    <div>
+                        <input class="newsletter-input" type="checkbox" checked="checked" name="subscribe">
+                        <label>Daily Newsletter</label>
+                    </div>
+                </div>
+                <div class="newsletter-container">
+                    <input class="newsletter-input" type="submit" value="Subscribe">
+                </div>
+            </form>
+        </section>
+    </div>
     <script>
-        // Get the modal
-        var modal = document.getElementById('id01');
-
+        // Get the modal : modal-signup e modalsignup
+        var modalsignup = document.getElementById('id01');
+    
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
+            if (event.target == modalsignup) {
+                modalsignup.style.display = "none";
             }
         }
-
+    
         /*Formulario de sign up*/
         var currentTab = 0; // Current tab is set to be the first tab (0)
         showTab(currentTab); // Display the current tab
-
+    
         function showTab(n) {
             // This function will display the specified tab of the form...
             var x = document.getElementsByClassName("tab");
@@ -285,7 +295,7 @@
             //... and run a function that will display the correct step indicator:
             fixStepIndicator(n)
         }
-
+    
         function nextPrev(n) {
             // This function will figure out which tab to display
             var x = document.getElementsByClassName("tab");
@@ -304,7 +314,7 @@
             // Otherwise, display the correct tab:
             showTab(currentTab);
         }
-
+    
         function validateForm() {
             // This function deals with validation of the form fields
             var x, y, i, valid = true;
@@ -326,7 +336,7 @@
             }
             return valid; // return the valid status
         }
-
+    
         function fixStepIndicator(n) {
             // This function removes the "active" class of all steps...
             var i, x = document.getElementsByClassName("step");
@@ -336,6 +346,7 @@
             //... and adds the "active" class on the current step:
             x[n].className += " active";
         }
+        
     </script>
-
+</body>
 </html>
