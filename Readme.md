@@ -37,7 +37,7 @@ Uma aplicação web responsiva, desenvolvida em html, css e javascript desenho d
 - Criação: 13 de março de 2020
 - Atualização: 14 de março de 2020
 - Terminado: Sim 
-- Publicado: [Menu Responsiva](https://douglasabnovato.github.io/menu-responsivo/)
+- Publicado: [Menu Responsivo](https://douglasabnovato.github.io/menu-responsivo/)
 
 #### Publicado
 
