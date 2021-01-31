@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="SiteEstatico" title="#SiteEstatico" src="./src/assets/menu-responsivo-1.jpg" />
+<img alt="SiteEstatico" title="#SiteEstatico" src="./src/assets/tela-1.jpg" />
 </h1>
 
 <h4 align="center"> 
@@ -46,15 +46,15 @@ Uma aplicação web responsiva, desenvolvida em html, css e javascript desenho d
 ### Web - v1.0
 
 <p align="center" style="display: flex; align-items: flex-start; justify-content: center;">
-  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./src/assets/menu-responsivo-1.jpg" width="400px">
-  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./src/assets/menu-responsivo-2.jpg" width="400px">
-  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./src/assets/menu-responsivo-3.jpg" width="400px">
-  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./src/assets/menu-responsivo-4.jpg" width="400px">
-  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./src/assets/menu-responsivo-5.jpg" width="400px">
-  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./src/assets/menu-responsivo-6.jpg" width="400px">
-  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./src/assets/menu-responsivo-7.jpg" width="400px">
-  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./src/assets/menu-responsivo-8.jpg" width="400px">
-  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./src/assets/menu-responsivo-9.jpg" width="400px">
+  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./assets/menu-responsivo-1.jpg" width="400px">
+  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./assets/menu-responsivo-2.jpg" width="400px">
+  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./assets/menu-responsivo-3.jpg" width="400px">
+  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./assets/menu-responsivo-4.jpg" width="400px">
+  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./assets/menu-responsivo-5.jpg" width="400px">
+  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./assets/menu-responsivo-6.jpg" width="400px">
+  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./assets/menu-responsivo-7.jpg" width="400px">
+  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./assets/menu-responsivo-8.jpg" width="400px">
+  <img alt="SiteEstaticoReactJS" title="#SiteEstaticoReactJS" src="./assets/menu-responsivo-9.jpg" width="400px">
 </p>  
 
 ## 🛠 Tecnologias
