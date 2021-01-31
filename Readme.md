@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="SiteEstatico" title="#SiteEstatico" src="./src/assets/tela-1.jpg" />
+    <img alt="SiteEstatico" title="#SiteEstatico" src="./src/assets/menu-responsivo-1.jpg" />
 </h1>
 
 <h4 align="center"> 
