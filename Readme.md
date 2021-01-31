@@ -64,12 +64,9 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Css][css]: posicionamento, dimensionamento e muito mais
 - [Javascript][javascript]
 - [HTML][html]: estrutura e efeitos 
-- [React][reactjs]: os fundamentos, como state, props, components, ciclo de vida.
 - [Git][git]
 - [Github][github] 
-- [Yarn][yarn]
-- [Node.js][nodejs]
-- [Zeit Now](https://vercel.com/)
+- [Github Pages](https://pages.github.com/)
 
 ## 🚀 Como executar o projeto
 
@@ -78,8 +75,7 @@ Podemos considerar este projeto como sendo com uma parte:
 
 ### Pré-requisitos
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js][nodejs]. 
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas: [Git](https://git-scm.com)  
 Além disto é bom ter um editor para trabalhar com o código como [VSCode][vscode]
 
 ### 🧭 Rodando a aplicação web (Front End)
@@ -89,13 +85,10 @@ Além disto é bom ter um editor para trabalhar com o código como [VSCode][vsco
 $ git clone https://github.com/douglasabnovato/site-estatico-reactjs
 
 # Acesse a pasta do projeto no seu terminal/cmd
-$ cd site-estatico-reactjs 
-
-# Instale as dependências
-$ npm install
+$ cd site-estatico 
 
 # Execute a aplicação em modo de desenvolvimento
-$ npm run start
+Open Live Server
 
 # A aplicação será aberta na porta:3000 - acesse http://localhost:3000
 
